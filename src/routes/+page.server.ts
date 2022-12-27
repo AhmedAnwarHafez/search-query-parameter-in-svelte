@@ -1,29 +1,24 @@
-import type { Actions } from './$types'
+import type { PageServerLoad } from './$types'
+import countries from '../lib/countries.json'
 
-export async function load({ url, fetch }) {
+export const load = (async ({ url }) => {
 	const searchQuery = url.searchParams.get('q') ?? ''
 
-	const searchResult = await (
-		await fetch(`/api/search?q=${encodeURIComponent(searchQuery)}`)
-	).json()
+	if (searchQuery === '') {
+		return {
+			status: 200,
+			searchResult: [],
+		}
+	}
 
-	console.log('searchResult', searchResult)
+	const searchResult = countries.filter(
+		(country) =>
+			country.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+			country.capital.toLowerCase().includes(searchQuery.toLowerCase()),
+	)
 
 	return {
 		status: 200,
-		props: {
-			searchQuery: searchQuery,
-			searchResult: searchResult,
-		},
+		searchResult: searchResult,
 	}
-}
-
-export const actions: Actions = {
-	search: (event) => {
-		console.log('search')
-
-		return {
-			data: 'Hello from search',
-		}
-	},
-}
+}) satisfies PageServerLoad

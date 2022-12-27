@@ -38,5 +38,12 @@
 			class="text-5xl bg-zinc-600 text-zinc-200"
 		/>
 	</form>
-	<p class="text-white text-4xl">{data.props.searchResult}</p>
+
+	{#each data.searchResult as result}
+		<div class="flex flex-col gap-4 w-2/4 border border-zinc-800 p-5 rounded-3xl">
+			<h1 class="text-zinc-400 text-5xl">{result.name}</h1>
+			<p class="text-zinc-200 text-3xl">{result.capital}</p>
+			<p class="text-zinc-200 text-3xl">{result.population}</p>
+		</div>
+	{/each}
 </section>

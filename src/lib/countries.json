@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Afghanistan",
+        "capital": "Kabul",
+        "population": 26023100
+    },
+    {
+        "name": "Albania",
+        "capital": "Tirana",
+        "population": 2893000
+    },
+    {
+        "name": "Algeria",
+        "capital": "Algiers",
+        "population": 40400000
+    },
+    {
+        "name": "Andorra",
+        "capital": "Andorra la Vella",
+        "population": 78000
+    },
+    {
+        "name": "Angola",
+        "capital": "Luanda",
+        "population": 25868000
+    },
+    {
+        "name": "Antigua and Barbuda",
+        "capital": "Saint John's",
+        "population": 86295
+    },
+    {
+        "name": "Argentina",
+        "capital": "Buenos Aires",
+        "population": 43590400
+    },
+    {
+        "name": "Armenia",
+        "capital": "Yerevan",
+        "population": 2994400
+    },
+    {
+        "name": "Australia",
+        "capital": "Canberra",
+        "population": 24117360
+    },
+    {
+        "name": "Austria",
+        "capital": "Vienna",
+        "population": 8725931
+    },
+    {
+        "name": "Azerbaijan",
+        "capital": "Baku",
+        "population": 9730500
+    },
+    {
+        "name": "Bahamas",
+        "capital": "Nassau",
+        "population": 378040
+    },
+    {
+        "name": "Bahrain",
+        "capital": "Manama",
+        "population": 1404900
+    },
+    {
+        "name": "Bangladesh",
+        "capital": "Dhaka",
+        "population": 161006790
+    },
+    {
+        "name": "Barbados",
+        "capital": "Bridgetown",
+        "population": 286641
+    },
+    {
+        "name": "Belarus",
+        "capital": "Minsk",
+        "population": 9498700
+    },
+    {
+        "name": "Belgium",
+        "capital": "Brussels",
+        "population": 11319511
+    }
+]
